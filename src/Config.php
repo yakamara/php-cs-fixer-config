@@ -36,11 +36,11 @@ class Config extends \PhpCsFixer\Config
 
             'align_multiline_comment' => true,
             'array_indentation' => true,
-            'braces' => [
-                'allow_single_line_anonymous_class_with_empty_body' => true,
-                'allow_single_line_closure' => false,
-            ],
             'compact_nullable_typehint' => true,
+            'curly_braces_position' => [
+                'allow_single_line_anonymous_functions' => false,
+                'allow_single_line_empty_anonymous_classes' => true,
+            ],
             'declare_strict_types' => true,
             'empty_loop_body' => ['style' => 'semicolon'],
             'escape_implicit_backslashes' => true,
