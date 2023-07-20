@@ -55,7 +55,10 @@ class Config extends \PhpCsFixer\Config
             'method_argument_space' => ['on_multiline' => 'ignore'],
             'multiline_comment_opening_closing' => true,
             'no_superfluous_elseif' => true,
-            'no_superfluous_phpdoc_tags' => true,
+            'no_superfluous_phpdoc_tags' => [
+                'allow_mixed' => true,
+                'remove_inheritdoc' => true,
+            ],
             'no_unset_on_property' => true,
             'no_useless_else' => true,
             'no_useless_return' => true,
