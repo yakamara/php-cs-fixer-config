@@ -7,6 +7,7 @@ namespace Yakamara\PhpCsFixerConfig;
 use PhpCsFixer\ConfigInterface;
 use PhpCsFixerCustomFixers\Fixer\ConstructorEmptyBracesFixer;
 use PhpCsFixerCustomFixers\Fixer\MultilinePromotedPropertiesFixer;
+use PhpCsFixerCustomFixers\Fixer\PhpdocSingleLineVarFixer;
 use PhpCsFixerCustomFixers\Fixers;
 
 class Config extends \PhpCsFixer\Config
@@ -108,6 +109,7 @@ class Config extends \PhpCsFixer\Config
 
             ConstructorEmptyBracesFixer::name() => true,
             MultilinePromotedPropertiesFixer::name() => true,
+            PhpdocSingleLineVarFixer::name() => true,
         ];
 
         return parent::setRules(array_merge($default, $rules));
