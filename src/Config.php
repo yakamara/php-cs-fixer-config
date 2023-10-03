@@ -36,24 +36,16 @@ class Config extends \PhpCsFixer\Config
             '@PHP81Migration' => true,
             '@PHP80Migration:risky' => true,
 
-            'align_multiline_comment' => true,
             'array_indentation' => true,
-            'compact_nullable_typehint' => true,
-            'curly_braces_position' => [
-                'allow_single_line_anonymous_functions' => false,
-                'allow_single_line_empty_anonymous_classes' => true,
-            ],
             'declare_strict_types' => true,
             'empty_loop_body' => ['style' => 'semicolon'],
             'escape_implicit_backslashes' => true,
-            'final_class' => false, // https://github.com/FriendsOfPHP/PHP-CS-Fixer/issues/5782
             'global_namespace_import' => [
                 'import_constants' => true,
                 'import_functions' => true,
                 'import_classes' => false,
             ],
             'heredoc_to_nowdoc' => true,
-            'list_syntax' => ['syntax' => 'short'],
             'method_argument_space' => ['on_multiline' => 'ignore'],
             'multiline_comment_opening_closing' => true,
             'no_superfluous_elseif' => true,
@@ -61,7 +53,6 @@ class Config extends \PhpCsFixer\Config
                 'allow_mixed' => true,
                 'remove_inheritdoc' => true,
             ],
-            'no_unset_on_property' => true,
             'no_useless_else' => true,
             'no_useless_return' => true,
             'nullable_type_declaration_for_default_null_value' => true,
