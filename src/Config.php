@@ -5,7 +5,6 @@ declare(strict_types=1);
 namespace Yakamara\PhpCsFixerConfig;
 
 use PhpCsFixer\ConfigInterface;
-use PhpCsFixerCustomFixers\Fixer\ConstructorEmptyBracesFixer;
 use PhpCsFixerCustomFixers\Fixer\MultilinePromotedPropertiesFixer;
 use PhpCsFixerCustomFixers\Fixer\PhpdocSingleLineVarFixer;
 use PhpCsFixerCustomFixers\Fixers;
@@ -30,6 +29,8 @@ class Config extends \PhpCsFixer\Config
     public function setRules(array $rules): ConfigInterface
     {
         $default = [
+            '@PER-CS2.0' => true,
+            '@PER-CS2.0:risky' => true,
             '@Symfony' => true,
             '@Symfony:risky' => true,
             '@PHP81Migration' => true,
@@ -104,7 +105,6 @@ class Config extends \PhpCsFixer\Config
             'use_arrow_functions' => false,
             'void_return' => false,
 
-            ConstructorEmptyBracesFixer::name() => true,
             MultilinePromotedPropertiesFixer::name() => true,
             PhpdocSingleLineVarFixer::name() => true,
         ];
