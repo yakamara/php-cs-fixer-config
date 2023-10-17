@@ -40,6 +40,7 @@ class Config extends \PhpCsFixer\Config
             'declare_strict_types' => true,
             'empty_loop_body' => ['style' => 'semicolon'],
             'escape_implicit_backslashes' => true,
+            'final_class' => true,
             'global_namespace_import' => [
                 'import_constants' => true,
                 'import_functions' => true,
