@@ -87,6 +87,7 @@ class Config extends \PhpCsFixer\Config
             'phpdoc_separation' => false,
             'phpdoc_to_comment' => false,
             'phpdoc_types_order' => false,
+            'single_line_empty_body' => true,
             'single_line_throw' => false,
             'strict_comparison' => true,
             'strict_param' => true,
