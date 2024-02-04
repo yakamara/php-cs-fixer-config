@@ -39,7 +39,6 @@ class Config extends \PhpCsFixer\Config
             'array_indentation' => true,
             'declare_strict_types' => true,
             'empty_loop_body' => ['style' => 'semicolon'],
-            'escape_implicit_backslashes' => true,
             'final_class' => true,
             'global_namespace_import' => [
                 'import_constants' => true,
@@ -91,6 +90,7 @@ class Config extends \PhpCsFixer\Config
             'single_line_throw' => false,
             'strict_comparison' => true,
             'strict_param' => true,
+            'string_implicit_backslashes' => ['single_quoted' => 'ignore'],
             'trailing_comma_in_multiline' => [
                 'after_heredoc' => true,
                 'elements' => ['arrays', 'parameters', 'match', 'arguments'],
