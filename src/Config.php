@@ -9,7 +9,7 @@ use PhpCsFixerCustomFixers\Fixer\MultilinePromotedPropertiesFixer;
 use PhpCsFixerCustomFixers\Fixer\PhpdocSingleLineVarFixer;
 use PhpCsFixerCustomFixers\Fixers;
 
-class Config extends \PhpCsFixer\Config
+final class Config extends \PhpCsFixer\Config
 {
     private function __construct(string $name)
     {
