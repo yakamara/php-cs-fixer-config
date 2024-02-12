@@ -81,7 +81,7 @@ final class Config extends \PhpCsFixer\Config
                 'function',
                 'const',
             ]],
-            'phpdoc_align' => false,
+            'phpdoc_align' => ['align' => 'left'],
             'phpdoc_order' => true,
             'phpdoc_separation' => false,
             'phpdoc_to_comment' => false,
