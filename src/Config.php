@@ -58,7 +58,6 @@ final class Config extends \PhpCsFixer\Config
             'no_useless_else' => true,
             'no_useless_return' => true,
             'nullable_type_declaration_for_default_null_value' => true,
-            'operator_linebreak' => false,
             'ordered_class_elements' => ['order' => [
                 'use_trait',
                 'case',
