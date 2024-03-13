@@ -41,6 +41,7 @@ final class Config extends \PhpCsFixer\Config
             'declare_strict_types' => true,
             'empty_loop_body' => ['style' => 'semicolon'],
             'final_class' => true,
+            'fully_qualified_strict_types' => ['import_symbols' => true],
             'global_namespace_import' => [
                 'import_constants' => true,
                 'import_functions' => true,
