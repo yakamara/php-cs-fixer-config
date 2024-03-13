@@ -37,6 +37,7 @@ final class Config extends \PhpCsFixer\Config
             '@PHP80Migration:risky' => true,
 
             'array_indentation' => true,
+            'concat_space' => ['spacing' => 'one'],
             'declare_strict_types' => true,
             'empty_loop_body' => ['style' => 'semicolon'],
             'final_class' => true,
