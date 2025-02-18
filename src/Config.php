@@ -78,11 +78,6 @@ final class Config extends \PhpCsFixer\Config
                 'method_protected',
                 'method_private',
             ]],
-            'ordered_imports' => ['imports_order' => [
-                'class',
-                'function',
-                'const',
-            ]],
             'phpdoc_align' => ['align' => 'left'],
             'phpdoc_array_type' => true,
             'phpdoc_order' => true,
@@ -95,7 +90,7 @@ final class Config extends \PhpCsFixer\Config
             'string_implicit_backslashes' => ['single_quoted' => 'ignore'],
             'trailing_comma_in_multiline' => [
                 'after_heredoc' => true,
-                'elements' => ['arrays', 'parameters', 'match', 'arguments'],
+                'elements' => ['arguments', 'array_destructuring', 'arrays', 'parameters', 'match'],
             ],
             'use_arrow_functions' => false,
             'void_return' => false,
