@@ -25,7 +25,7 @@ final class Config extends \PhpCsFixer\Config
 
     public static function php81(): self
     {
-        return new self('Yakamara (PHP 8.1)');
+        return new self('Yakamara (PHP >= 8.1)');
     }
 
     public function setRules(array $rules): ConfigInterface
