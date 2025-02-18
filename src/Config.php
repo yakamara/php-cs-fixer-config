@@ -47,7 +47,7 @@ final class Config extends \PhpCsFixer\Config
             'global_namespace_import' => [
                 'import_constants' => true,
                 'import_functions' => true,
-                'import_classes' => false,
+                'import_classes' => true,
             ],
             'heredoc_to_nowdoc' => true,
             'method_argument_space' => ['on_multiline' => 'ignore'],
