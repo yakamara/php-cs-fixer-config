@@ -18,6 +18,7 @@ final class Config extends \PhpCsFixer\Config
         $this->setUsingCache(true);
         $this->setParallelConfig(ParallelConfigFactory::detect());
         $this->setRiskyAllowed(true);
+        $this->setUnsupportedPhpVersionAllowed(true);
         $this->registerCustomFixers(new Fixers());
         $this->setRules([]);
     }
