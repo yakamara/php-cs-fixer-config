@@ -6,7 +6,6 @@ namespace Yakamara\PhpCsFixerConfig;
 
 use PhpCsFixer\ConfigInterface;
 use PhpCsFixer\Runner\Parallel\ParallelConfigFactory;
-use PhpCsFixerCustomFixers\Fixer\MultilinePromotedPropertiesFixer;
 use PhpCsFixerCustomFixers\Fixer\PhpdocSingleLineVarFixer;
 use PhpCsFixerCustomFixers\Fixers;
 
@@ -52,6 +51,7 @@ final class Config extends \PhpCsFixer\Config
             'heredoc_to_nowdoc' => true,
             'method_argument_space' => ['on_multiline' => 'ignore'],
             'multiline_comment_opening_closing' => true,
+            'multiline_promoted_properties' => true,
             'no_superfluous_elseif' => true,
             'no_superfluous_phpdoc_tags' => [
                 'allow_mixed' => true,
@@ -95,7 +95,6 @@ final class Config extends \PhpCsFixer\Config
             'use_arrow_functions' => false,
             'void_return' => false,
 
-            MultilinePromotedPropertiesFixer::name() => true,
             PhpdocSingleLineVarFixer::name() => true,
         ];
 
