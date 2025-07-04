@@ -52,7 +52,7 @@ final class Config extends \PhpCsFixer\Config
             'heredoc_to_nowdoc' => true,
             'method_argument_space' => ['on_multiline' => 'ignore'],
             'multiline_comment_opening_closing' => true,
-            'multiline_promoted_properties' => true,
+            'multiline_promoted_properties' => ['keep_blank_lines' => true],
             'no_superfluous_elseif' => true,
             'no_superfluous_phpdoc_tags' => [
                 'allow_mixed' => true,
