@@ -11,8 +11,11 @@ use PhpCsFixerCustomFixers\Fixers;
 
 final class Config extends \PhpCsFixer\Config
 {
-    private function __construct(string $name)
-    {
+    private function __construct(
+        string $name,
+        private string $phpMigration,
+        private string $phpMigrationRisky,
+    ) {
         parent::__construct($name);
 
         $this->setUsingCache(true);
@@ -25,7 +28,12 @@ final class Config extends \PhpCsFixer\Config
 
     public static function php81(): self
     {
-        return new self('Yakamara (PHP >= 8.1)');
+        return new self('Yakamara (PHP >= 8.1)', '81', '80');
+    }
+
+    public static function php84(): self
+    {
+        return new self('Yakamara (PHP >= 8.4)', '84', '82');
     }
 
     public function setRules(array $rules): ConfigInterface
@@ -35,8 +43,8 @@ final class Config extends \PhpCsFixer\Config
             '@PER-CS2.0:risky' => true,
             '@Symfony' => true,
             '@Symfony:risky' => true,
-            '@PHP81Migration' => true,
-            '@PHP80Migration:risky' => true,
+            "@PHP{$this->phpMigration}Migration" => true,
+            "@PHP{$this->phpMigrationRisky}Migration:risky" => true,
 
             'array_indentation' => true,
             'concat_space' => ['spacing' => 'one'],
