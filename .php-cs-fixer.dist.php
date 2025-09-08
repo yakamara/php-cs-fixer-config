@@ -2,10 +2,12 @@
 
 declare(strict_types=1);
 
-$finder = (new PhpCsFixer\Finder())
-    ->in(__DIR__)
-;
+use PhpCsFixer\Finder;
+use Yakamara\PhpCsFixerConfig\Config;
 
-return Yakamara\PhpCsFixerConfig\Config::php81()
-    ->setFinder($finder)
+return Config::php81()
+    ->setFinder((new Finder())
+        ->in(__DIR__)
+        ->append([__FILE__]),
+    )
 ;
