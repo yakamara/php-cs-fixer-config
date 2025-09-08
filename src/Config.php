@@ -39,8 +39,8 @@ final class Config extends \PhpCsFixer\Config
     public function setRules(array $rules): ConfigInterface
     {
         $default = [
-            '@PER-CS2.0' => true,
-            '@PER-CS2.0:risky' => true,
+            '@PER-CS3.0' => true,
+            '@PER-CS3.0:risky' => true,
             '@Symfony' => true,
             '@Symfony:risky' => true,
             "@PHP{$this->phpMigration}Migration" => true,
