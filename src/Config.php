@@ -28,19 +28,19 @@ final class Config extends \PhpCsFixer\Config
 
     public static function php81(): self
     {
-        return new self('Yakamara (PHP >= 8.1)', '81', '80');
+        return new self('Yakamara (PHP >= 8.1)', '8x1', '8x0');
     }
 
     public static function php84(): self
     {
-        return new self('Yakamara (PHP >= 8.4)', '84', '82');
+        return new self('Yakamara (PHP >= 8.4)', '8x4', '8x2');
     }
 
     public function setRules(array $rules): ConfigInterface
     {
         $default = [
-            '@PER-CS3.0' => true,
-            '@PER-CS3.0:risky' => true,
+            '@PER-CS3x0' => true,
+            '@PER-CS3x0:risky' => true,
             '@Symfony' => true,
             '@Symfony:risky' => true,
             "@PHP{$this->phpMigration}Migration" => true,
